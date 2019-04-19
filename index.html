@@ -231,24 +231,7 @@
   </style>
 
 </head>
-<body>
-  <div id='app'>
-        <!-- Webamp will attempt to center itself within this div -->
-    </div>
-    <script src="https://unpkg.com/webamp@1.3.1/built/webamp.bundle.min.js"></script>
-    <script>
-        const Webamp = window.Webamp;
-        new Webamp({
-            initialTracks: [{
-                metaData: {
-                    artist: "DJ Mike Llama",
-                    title: "Llama Whippin' Intro"
-                },
-                url: "tiger.mp3"
-            }],
-        }).renderWhenReady(document.getElementById('app'));
-    </script>
-  
+<body> 
   <div class="bubbles"></div>
   <img style='' src='dcash.png' onmouseover="javascript: document.getElementById('hotdog-mp3').play();">
   <marquee>Eye of the Tiger Fish</marquee>
@@ -296,5 +279,21 @@ bubbles();
 </script>
 <script src="https://rawgit.com/scottschiller/Snowstorm/master/snowstorm.js"></script>
 <marquee>Eye of the Tiger Fish...</marquee>
+      <div id='app'>
+        <!-- Webamp will attempt to center itself within this div -->
+    </div>
+    <script src="https://unpkg.com/webamp@1.3.1/built/webamp.bundle.min.js"></script>
+    <script>
+        const Webamp = window.Webamp;
+        new Webamp({
+            initialTracks: [{
+                metaData: {
+                    artist: "DJ Mike Llama",
+                    title: "Llama Whippin' Intro"
+                },
+                url: "tiger.mp3"
+            }],
+        }).renderWhenReady(document.getElementById('app'));
+    </script>
 </body>
 </html>
